@@ -1,15 +1,13 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import Header from './componentes/header/Header'
-import Footer from './componentes/footer/Footer'
+import Header from './pages/header/Header'
 
 function App() {
 
   return (
     <>
-      <Header/>
-      <Footer/>
+    <Header/>
     </>
   )
 }
