@@ -3,7 +3,7 @@
 //import viteLogo from '/vite.svg'
 //import Header from './pages/header/Header'
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import NavbarApp from "./componentes/navBar";
 import Home from "./pages/home";
 import Menu from "./pages/menu";
@@ -16,6 +16,7 @@ function App() {
     const saved = localStorage.getItem("cart");
     return saved ? JSON.parse(saved) : [];
   });
+
 
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
@@ -39,6 +40,7 @@ function App() {
         <Route path="/menu" element={<Menu onAdd={addToCart} />} />
         <Route path="/cart" element={<Cart cart={cart} setCart={setCart} />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={ <Navigate to="/"/> }/>
       </Routes>
     </BrowserRouter>
   );
