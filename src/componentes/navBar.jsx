@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function NavbarApp({ cartCount }) {
   return (
-    <Navbar bg="light" expand="lg" className="shadow-sm mb-4">
+    <Navbar bg="light" expand="lg" className="shadow-sm mb-4" fixed="top">
       <Container>
         <Navbar.Brand as={Link} to="/">Luna & Granos Café ☕</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

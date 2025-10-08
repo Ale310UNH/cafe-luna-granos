@@ -10,6 +10,7 @@ import Menu from "./pages/menu";
 import Cart from "./pages/cart";
 import Contact from "./pages/contact";
 import { useState, useEffect } from "react";
+import './App.css'
 
 function App() {
   const [cart, setCart] = useState(() => {
