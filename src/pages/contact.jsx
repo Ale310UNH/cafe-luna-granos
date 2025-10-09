@@ -19,7 +19,7 @@ export default function Contact() {
   };
 
   return (
-    <Container className="my-4" id="form">
+    <Container className="my-4" id="form" style={{ maxWidth:400 }}>
       <h2>Contacto / Reservas</h2>
       {sent && <Alert variant="success">Tu consulta/reserva fue enviada correctamente.</Alert>}
       <Form onSubmit={handleSubmit}>
