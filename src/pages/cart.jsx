@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function Cart({ cart, setCart }) {
   const [confirming, setConfirming] = useState(false);
 
-  const handleQty = (id, qty) => {
+  const handleQty = (id, qty) => { //qty = "cantidad"
     if (qty <= 0) return setCart(cart.filter((i) => i.id !== id));
     setCart(cart.map((i) => (i.id === id ? { ...i, qty } : i)));
   };
@@ -34,7 +34,7 @@ export default function Cart({ cart, setCart }) {
                 <th>Precio</th>
                 <th>Cantidad</th>
                 <th>Subtotal</th>
-                <th></th>
+                <th>Eliminar productos</th>
               </tr>
             </thead>
             <tbody>

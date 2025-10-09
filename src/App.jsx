@@ -1,14 +1,9 @@
-
-//import reactLogo from './assets/react.svg'
-//import viteLogo from '/vite.svg'
-//import Header from './pages/header/Header'
-
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import NavbarApp from "./componentes/navBar";
-import Home from "./pages/home";
-import Menu from "./pages/menu";
-import Cart from "./pages/cart";
-import Contact from "./pages/contact";
+import NavbarApp from "./componentes/NavBar";
+import Home from "./pages/Home";
+import Menu from "./pages/Menu";
+import Cart from "./pages/Cart";
+import Contact from "./pages/Contact";
 import { useState, useEffect } from "react";
 import './App.css'
 
@@ -32,7 +27,7 @@ function App() {
   };
 
   const cartCount = cart.reduce((acc, i) => acc + i.qty, 0);
-
+  
   return (
     <BrowserRouter>
       <NavbarApp cartCount={cartCount} />

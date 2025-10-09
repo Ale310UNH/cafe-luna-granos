@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
-import ProductCard from "../componentes/productCard";
-import { PRODUCTS } from "../data/products";
+import ProductCard from "../componentes/ProductCard";
+import { PRODUCTS } from "../data/Products";
 
 export default function Menu({ onAdd }) {
   return (
