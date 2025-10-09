@@ -11,6 +11,7 @@
     Hooks (useState, useEffect)
 
 ▶️ Cómo correr en local
+    .Posiblemente no corra a no ser se cambien los nombres de los archivos .jsx en src con mayuscula al inicio
     .Tener instalado Node.js en su version 18 para adelante
     .Tener instalado Npm
     .git clone <TU_REPO_URL>
