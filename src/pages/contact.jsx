@@ -1,6 +1,5 @@
 import { Container, Form, Button, Alert } from "react-bootstrap";
 import { useState } from "react";
-import './contact.css'
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", date: "", time: "", message: "" });
