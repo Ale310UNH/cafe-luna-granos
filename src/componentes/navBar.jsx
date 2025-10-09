@@ -1,5 +1,4 @@
-import { Container, Nav, Navbar, Badge, NavLink } from "react-bootstrap";
-import { LinkContainer } from "react-router-bootstrap";
+import { Container, Nav, Navbar, Badge } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 export default function NavbarApp({ cartCount }) {
